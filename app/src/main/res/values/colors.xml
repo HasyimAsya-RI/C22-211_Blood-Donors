@@ -1,0 +1,15 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<resources>
+    <color name = "white"       > #FFFFFFFF </color>
+    <color name = "gray_light"  > #EEEEEE   </color>
+    <color name = "gray"        > #E1E1E1   </color>
+    <color name = "gray_dark"   > #C8C8C8   </color>
+
+    <color name = "teal_200"    > #FF03DAC5 </color>
+    <color name = "teal_700"    > #FF018786 </color>
+
+    <color name = "red_light"   > #BF4230   </color>
+    <color name = "red"         > #880808   </color>
+    <color name = "red_dark"    > #550000   </color>
+    <color name = "black"       > #FF000000 </color>
+</resources>

@@ -1,0 +1,38 @@
+<resources>
+    <string name = "app_name">Grup C22–211</string>
+
+    <string name = "descr_logo">Gambar Logo</string>
+    <string name = "descr_email">Gambar Ikon Email</string>
+    <string name = "descr_phone">Gambar Ikon Telepon</string>
+    <string name = "descr_blood">Gambar Ikon Darah</string>
+    <string name = "descr_contact">Tombol Hubungi Pengguna</string>
+
+    <string name = "log_in_inst">Masukkan email dan kata sandi Anda.</string>
+    <string name = "forgot_inst">Masukkan email untuk mencari akun Anda.</string>
+    <string name = "search_inst">Siapa yang Anda cari?</string>
+
+    <string name = "reg_title">Buat Akun Baru</string>
+    <string name = "forgot_title">Temukan Akun Anda</string>
+    <string name = "email">Email</string>
+    <string name = "password">Kata sandi</string>
+    <string name = "name">Nama</string>
+    <string name = "blood">Golongan darah</string>
+    <string name = "address">Alamat</string>
+    <string name = "phone">Nomor telepon</string>
+    <string name = "home">Beranda</string>
+    <string name = "profile">Profil</string>
+    <string name = "loading">Memuat…</string>
+    <string name = "vertical_bar">\t |  \t</string>
+    <string name = "comma">,\t</string>
+
+    <string name = "reg_here">Daftar Akun</string>
+    <string name = "sign_up">Daftar</string>
+    <string name = "log_in">Masuk</string>
+    <string name = "forgot_here">Lupa Kata Sandi</string>
+    <string name = "find_acct">Cari</string>
+    <string name = "cancel">Batal</string>
+    <string name = "log_out">Keluar</string>
+
+    <string name = "open">Buka</string>
+    <string name = "close">Tutup</string>
+</resources>

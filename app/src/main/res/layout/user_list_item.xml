@@ -1,0 +1,82 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android           = "http://schemas.android.com/apk/res/android"
+    xmlns:tools             = "http://schemas.android.com/tools"
+    android:layout_width    = "match_parent"
+    android:layout_height   = "wrap_content">
+
+    <RelativeLayout
+        android:layout_width        = "match_parent"
+        android:layout_height       = "wrap_content"
+        android:paddingTop          = "20dp"
+        android:background          = "@color/red_light">
+
+        <ImageView
+            android:id                  = "@+id/img_contact"
+            android:contentDescription  = "@string/descr_contact"
+            android:layout_width        = "30dp"
+            android:layout_height       = "30dp"
+            android:layout_marginEnd    = "30dp"
+            android:src                 = "@drawable/ic_arrow"
+            android:layout_centerVertical           = "true"
+            android:layout_alignParentEnd           = "true" />
+
+        <LinearLayout
+            android:layout_width        = "match_parent"
+            android:layout_height       = "wrap_content"
+            android:paddingHorizontal   = "20dp"
+            android:orientation         = "vertical">
+
+            <TextView
+                android:id                  = "@+id/txt_blood"
+                android:layout_width        = "match_parent"
+                android:layout_height       = "wrap_content"
+                android:layout_marginStart  = "10dp"
+                tools:text                  = "B+"
+                android:textSize            = "18sp"
+                android:textStyle           = "bold"
+                android:textColor           = "@color/white" />
+            <TextView
+                android:id                  = "@+id/txt_name"
+                android:layout_width        = "match_parent"
+                android:layout_height       = "wrap_content"
+                android:layout_marginStart  = "10dp"
+                tools:text                  = "Muhammad Hasyim Asy'ari"
+                android:textSize            = "15sp"
+                android:textColor           = "@color/white" />
+            <LinearLayout
+                android:layout_width        = "match_parent"
+                android:layout_height       = "wrap_content"
+                android:layout_marginStart  = "10dp"
+                android:orientation         = "horizontal">
+
+                <TextView
+                    android:id                  = "@+id/txt_district"
+                    android:layout_width        = "wrap_content"
+                    android:layout_height       = "wrap_content"
+                    tools:text                  = "Ngemplak"
+                    android:textSize            = "15sp"
+                    android:textColor           = "@color/gray_dark" />
+                <TextView
+                    android:layout_width        = "wrap_content"
+                    android:layout_height       = "wrap_content"
+                    android:text                = "@string/comma"
+                    android:textSize            = "15sp"
+                    android:textColor           = "@color/gray_dark" />
+                <TextView
+                    android:id                  = "@+id/txt_regency"
+                    android:layout_width        = "wrap_content"
+                    android:layout_height       = "wrap_content"
+                    tools:text                  = "Kab. Sleman"
+                    android:textSize            = "15sp"
+                    android:textColor           = "@color/gray_dark" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width        = "match_parent"
+                android:layout_height       = "1dp"
+                android:layout_marginTop    = "20dp"
+                android:background          = "@color/gray_dark" />
+        </LinearLayout>
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>

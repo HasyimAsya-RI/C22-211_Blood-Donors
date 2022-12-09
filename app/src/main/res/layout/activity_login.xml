@@ -1,0 +1,113 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android           = "http://schemas.android.com/apk/res/android"
+    xmlns:app               = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools             = "http://schemas.android.com/tools"
+    android:layout_width    = "match_parent"
+    android:layout_height   = "match_parent"
+    android:paddingHorizontal   = "30dp"
+    android:background      = "@color/gray_light"
+    tools:context           = ".ui.auth.LoginActivity">
+
+    <LinearLayout
+        android:layout_width        = "match_parent"
+        android:layout_height       = "wrap_content"
+        android:orientation         = "vertical"
+        app:layout_constraintTop_toTopOf        = "parent"
+        app:layout_constraintStart_toStartOf    = "parent"
+        app:layout_constraintEnd_toEndOf        = "parent"
+        app:layout_constraintBottom_toBottomOf  = "parent">
+
+        <ImageView
+            android:contentDescription  = "@string/descr_logo"
+            android:layout_width        = "match_parent"
+            android:layout_height       = "100dp"
+            android:src                 = "@drawable/blood" />
+
+        <TextView
+            android:layout_width        = "match_parent"
+            android:layout_height       = "wrap_content"
+            android:layout_marginTop    = "60dp"
+            android:text                = "@string/log_in_inst"
+            android:textSize            = "15sp"
+            android:textColor           = "@color/black" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width        = "match_parent"
+            android:layout_height       = "wrap_content"
+            android:layout_marginTop    = "10dp"
+            app:boxCollapsedPaddingTop  = "0dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id                  = "@+id/edt_email"
+                android:layout_width        = "match_parent"
+                android:layout_height       = "45dp"
+                android:inputType           = "textEmailAddress"
+                android:hint                = "@string/email"
+                android:textSize            = "15sp"
+                android:padding             = "12dp"
+                android:background          = "@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width        = "match_parent"
+            android:layout_height       = "wrap_content"
+            android:layout_marginTop    = "10dp"
+            app:passwordToggleEnabled   = "true"
+            app:boxCollapsedPaddingTop  = "0dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id                  = "@+id/edt_password"
+                android:layout_width        = "match_parent"
+                android:layout_height       = "45dp"
+                android:padding             = "12dp"
+                android:inputType           = "textPassword"
+                android:hint                = "@string/password"
+                android:textSize            = "15sp"
+                android:background          = "@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id                  = "@+id/btn_signIn"
+            android:layout_width        = "match_parent"
+            android:layout_height       = "60dp"
+            android:layout_marginTop    = "10dp"
+            android:text                = "@string/log_in"
+            android:textSize            = "18sp"
+            android:textAllCaps         = "false"
+            android:backgroundTint      = "@color/red" />
+
+        <TextView
+            android:layout_width        = "match_parent"
+            android:layout_height       = "1dp"
+            android:layout_marginTop    = "30dp"
+            android:background          = "@color/gray_dark" />
+
+        <LinearLayout
+            android:layout_width        = "match_parent"
+            android:layout_height       = "wrap_content"
+            android:layout_marginTop    = "10dp"
+            android:gravity             = "center"
+            android:orientation         = "horizontal">
+
+            <TextView
+                android:id                  = "@+id/btn_registration"
+                android:layout_width        = "wrap_content"
+                android:layout_height       = "wrap_content"
+                android:text                = "@string/reg_here"
+                android:textSize            = "15sp"
+                android:textColor           = "@color/red" />
+            <TextView
+                android:layout_width        = "wrap_content"
+                android:layout_height       = "wrap_content"
+                android:text                = "@string/vertical_bar"
+                android:textSize            = "15sp"
+                android:textColor           = "@color/black" />
+            <TextView
+                android:id                  = "@+id/btn_forgotPassword"
+                android:layout_width        = "wrap_content"
+                android:layout_height       = "wrap_content"
+                android:text                = "@string/forgot_here"
+                android:textSize            = "15sp"
+                android:textColor           = "@color/red" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

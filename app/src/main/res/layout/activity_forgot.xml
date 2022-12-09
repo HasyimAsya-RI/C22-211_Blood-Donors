@@ -1,0 +1,73 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<ScrollView
+    xmlns:android           = "http://schemas.android.com/apk/res/android"
+    xmlns:tools             = "http://schemas.android.com/tools"
+    android:layout_width    = "match_parent"
+    android:layout_height   = "match_parent"
+    android:paddingHorizontal   = "30dp"
+    android:background      = "@color/gray_light"
+    tools:context           = ".ui.auth.ForgotActivity">
+
+    <LinearLayout
+        android:layout_width        = "match_parent"
+        android:layout_height       = "wrap_content"
+        android:layout_marginTop    = "30dp"
+        android:orientation         = "vertical">
+
+        <TextView
+            android:layout_width        = "match_parent"
+            android:layout_height       = "wrap_content"
+            android:text                = "@string/forgot_title"
+            android:textSize            = "25sp"
+            android:textStyle           = "bold"
+            android:textColor           = "@color/black" />
+
+        <TextView
+            android:layout_width        = "match_parent"
+            android:layout_height       = "wrap_content"
+            android:layout_marginTop    = "50dp"
+            android:text                = "@string/forgot_inst"
+            android:textSize            = "15sp"
+            android:textColor           = "@color/black" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width        = "match_parent"
+            android:layout_height       = "match_parent"
+            android:layout_marginTop    = "10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id                  = "@+id/edt_email"
+                android:layout_width        = "match_parent"
+                android:layout_height       = "45dp"
+                android:padding             = "10dp"
+                android:inputType           = "textEmailAddress"
+                android:background          = "@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width        = "match_parent"
+            android:layout_height       = "wrap_content"
+            android:layout_marginTop    = "10dp">
+
+            <Button
+                android:id                  = "@+id/btn_findAccount"
+                android:layout_width        = "wrap_content"
+                android:layout_height       = "60dp"
+                android:text                = "@string/find_acct"
+                android:textAllCaps         = "false"
+                android:textSize            = "18sp"
+                android:backgroundTint      = "@color/red"
+                android:layout_alignParentEnd           = "true" />
+            <Button
+                android:id                  = "@+id/btn_cancel"
+                android:layout_width        = "wrap_content"
+                android:layout_height       = "60dp"
+                android:layout_marginEnd    = "10dp"
+                android:text                = "@string/cancel"
+                android:textAllCaps         = "false"
+                android:textSize            = "18sp"
+                android:textColor           = "@color/black"
+                android:backgroundTint      = "@color/gray"
+                android:layout_toStartOf    = "@id/btn_findAccount" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
